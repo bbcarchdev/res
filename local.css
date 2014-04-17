@@ -1,0 +1,102 @@
+body>header .masthead {
+	display: block;
+	background: #ec7139;
+}
+body.home>header .masthead {
+	background: #ec7139 url('masthead.png') 50% 50% no-repeat;
+}
+body.home>section.keynav {
+	display: block;
+	position: relative;
+	background: #000;
+	color: #e2e2e2;
+	width: auto;
+	max-width: none;
+	margin: -13pt -13pt 0 -13pt;
+}
+body.home>section.keynav:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: '';
+	overflow: hidden;
+}
+body.home section.keynav a {
+	color: #ec7139;
+}
+body.home section.keynav>.inner {
+	max-width: 960px;
+	padding: 26pt 0 13pt 0;
+	margin: 0 auto;
+}
+body.home section.keynav dl.item {
+	margin: 0 13pt 26pt 13pt;
+	float: left;
+	width: 45%;
+	position: relative;
+}
+@media screen and (max-width: 700px) {
+	body.home section.keynav dl.item {
+		float: none;
+		width: inherit;
+	}
+}
+body.home section.keynav dt {
+	margin: 0 0 0.25em 0;
+}
+body.home section.keynav dt>a {
+	text-decoration: none;
+}
+body.home section.keynav dt, body.home section.keynav dd {
+	padding-left: 84px;
+}
+body.home section.keynav dd {
+	margin-left: 0;
+}
+body.home section.keynav .icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 76px;
+	height: 76px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	text-decoration: none !important;
+}
+body.home section.keynav dl#guides .icon {
+	background-image: url('246-route@2x.png');
+}
+body.home section.keynav dl#api .icon {
+	background-image: url('583-broadcast@2x.png');
+}
+body.home section.keynav dl#tools .icon {
+	background-image: url('519-tools-1@2x.png');
+}
+body.home section.keynav dl#code .icon {
+	background-image: url('521-dropzone@2x.png');
+}
+body.home section.keynav + section {
+	border-top: none;
+}
+
+dd.desc {
+	margin-left: 0;
+}
+b {
+	font-weight: normal;
+}
+body>footer>p.logos {
+	position: relative;
+	padding-top: 13pt;
+}
+body>footer>p.logos>a {
+	padding-right: 2em;
+}
+a#bufvc-logo {
+	position: absolute;
+}
+img {
+    border: none;
+}
+
+
