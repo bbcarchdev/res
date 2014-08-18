@@ -13,15 +13,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="utf-8" />
 		<!--[if lt IE 9]><script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script><![endif]-->
-		<title>Tools — Research &amp; Education Space</title>
+		<title><?php echo $page_title; ?></title>
 		<link rel="stylesheet" type="text/css" href="/painting-by-numbers/style.css">
 		<link rel="stylesheet" type="text/css" href="/painting-by-numbers/print.css" media="print">
+<?php if(!defined('NOFONTS')) {?>
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6699852/732262/css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,500,300italic,500italic|Inconsolata|Arapey">
+<?php } ?>
 		<link rel="stylesheet" type="text/css" href="local.css">
 		<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/painting-by-numbers/ie78.css" /><![endif]-->
 	</head>
-	<body>
+	<body<?php echo $bodyclassattr; ?>>
 		<header>
 			<nav class="global"><div class="inner">
 					<ul>
@@ -33,34 +35,6 @@
 					</ul>
 			</div></nav>
 			<div class="masthead"></div>
-			<h1>Tools</h1>
+			<h1><?php echo $title; ?></h1>
 		</header>
-			<section id="twine">
-			<h1><a href="/twine/">Twine</a></h1>
-			<p>
-				Twine is a modular, queue-driven workflow engine for publishing linked open data.
-			</p>
-			<p>
-				Twine receives messages via the <a href="http://www.amqp.org">AMQP</a> message queue protocol,
-				processes them (translating to RDF), and pushes them into a store using
-				<a href="http://www.w3.org/TR/sparql11-overview/">SPARQL</a>.
-			</p>
-			<p>
-				Although Twine includes some XSLT-based transformation capability out of the box,
-				the intention is that users of Twine will develop their own processing modules to
-				suit their particular workflows.
-			</p>
-		</section>
-		<footer>
-			<p>Copyright © 2014 BBC.</p>
-			<p>
-				The text of these pages is licensed under the terms of the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government Licence v2.0</a>. Please note that this does not apply to fonts and images (including logos and trademarks).
-			</p>
-			<p class="logos">
-				<a href="http://www.jisc.ac.uk/" title="Jisc"><img src="jisclogo.png" alt="Jisc"></a>
-				<a href="http://www.bbc.co.uk/" title="BBC"><img src="bbclogo.png" alt="BBC"></a>
-				<a id="bufvc-logo" href="http://www.bufvc.ac.uk/" title="BUFVC"><img src="bufvclogo.png" alt="BUFVC"></a>
-			</p>
-		</footer>
-	</body>
-</html>
+	

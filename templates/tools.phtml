@@ -1,0 +1,26 @@
+<?php /***** Process this file with tools/generate.php to produce HTML *****/
+
+page_header('Tools');
+
+?>
+		<section id="twine">
+			<h1><a href="/twine/">Twine</a></h1>
+			<p>
+				Twine is a modular, queue-driven workflow engine for publishing linked open data.
+			</p>
+			<p>
+				Twine receives messages via the <a href="http://www.amqp.org">AMQP</a> message queue protocol,
+				processes them (translating to RDF), and pushes them into a store using
+				<a href="http://www.w3.org/TR/sparql11-overview/">SPARQL</a>.
+			</p>
+			<p>
+				Although Twine includes some XSLT-based transformation capability out of the box,
+				the intention is that users of Twine will develop their own processing modules to
+				suit their particular workflows.
+			</p>
+		</section>
+<?php
+	
+page_footer();
+	
+?>
