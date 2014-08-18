@@ -17,39 +17,39 @@
 ## These are the make rules for building this tree as part of the RES
 ## website - https://bbcarchdev.github.io/res/
 
-PACKAGE = res-website/res
+top = ..
+subdir = res
 
-sysconfdir ?= /etc
-webdir ?= /var/www
+include $(top)/config.mk
 
-INSTALL ?= install
+HTML = code.html guides.html index.html tools.html
 
-FILES = \
-	code.html guides.html index.html tools.html \
+FILES = $(HTML) \
 	local.css \
 	246-route@2x.png 519-tools-1@2x.png 521-dropzone@2x.png 583-broadcast@2x.png \
 	bbclogo.png bufvclogo.png jisclogo.png masthead.png
 
 GENERATOR = templates/generate.php
 GENFILES = $(GENERATOR) templates/header.php templates/footer.php
+GENERATE = $(PHP) -f $(GENERATOR)
 
 all: $(FILES)
 
 clean:
-	rm -f index.html code.html guides.html tools.html
+	rm -f $(HTML)
 
 install:
-	$(INSTALL) -m 755 -d $(DESTDIR)$(webdir)/$(PACKAGE)
-	for i in $(FILES) ; do $(INSTALL) -m 644 $$i $(DESTDIR)$(webdir)/$(PACKAGE) ; done
+	$(INSTALL) -m 755 -d $(DESTDIR)$(webdir)/$(PACKAGE)/$(subdir)
+	for i in $(FILES) ; do $(INSTALL) -m 644 $$i $(DESTDIR)$(webdir)/$(PACKAGE)/$(subdir) ; done
 
 index.html: templates/index.phtml $(GENFILES)
-	php -f $(GENERATOR) $< > $@
+	$(GENERATE) $< > $@
 
 code.html: templates/code.phtml $(GENFILES)
-	php -f $(GENERATOR) $< > $@
+	$(GENERATE) $< > $@
 
 guides.html: templates/guides.phtml $(GENFILES)
-	php -f $(GENERATOR) $< > $@
+	$(GENERATE) $< > $@
 
 tools.html: templates/tools.phtml $(GENFILES)
-	php -f $(GENERATOR) $< > $@
+	$(GENERATE) $< > $@
