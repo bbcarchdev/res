@@ -11,7 +11,7 @@ FILES = \
 	246-route@2x.png 519-tools-1@2x.png 521-dropzone@2x.png 583-broadcast@2x.png \
 	bbclogo.png bufvclogo.png jisclogo.png masthead.png
 
-GENERATOR = tools/generate.php
+GENERATOR = templates/generate.php
 GENFILES = $(GENERATOR) templates/header.php templates/footer.php
 
 all: $(FILES)
