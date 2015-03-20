@@ -1,6 +1,6 @@
 ## Author: Mo McRoberts <mo.mcroberts@bbc.co.uk>
 ##
-## Copyright (c) 2014 BBC
+## Copyright (c) 2014-2015 BBC
 ##
 ##  Licensed under the Apache License, Version 2.0 (the "License");
 ##  you may not use this file except in compliance with the License.
@@ -29,6 +29,7 @@ FILES = $(HTML) \
 	246-route@2x.png 519-tools-1@2x.png 521-dropzone@2x.png 583-broadcast@2x.png \
 	bbclogo.png bufvclogo.png jisclogo.png masthead.png
 
+PHP ?= php
 GENERATOR = templates/generate.php
 GENFILES = $(GENERATOR) templates/header.php templates/footer.php
 GENERATE = $(PHP) -f $(GENERATOR)
