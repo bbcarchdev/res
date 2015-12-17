@@ -24,5 +24,5 @@ code.html: $(srcdir)/templates/code.phtml $(srcdir)/templates/generate.php $(TEM
 guides.html: $(srcdir)/templates/guides.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
 	$(PHP) -f $(srcdir)/templates/generate.php $< > $@
 
-tools.html: $(srcdir)/templates/index.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
+tools.html: $(srcdir)/templates/tools.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
 	$(PHP) -f $(srcdir)/templates/generate.php $< > $@
