@@ -11,18 +11,22 @@ SUBDIRS = templates
 
 reshtdoc_DATA = index.html code.html guides.html tools.html
 
+CLEANFILES = $(reshtdoc_DATA)
+
 dist_reshtdoc_DATA = local.css *.png
 
 TEMPLATES = templates/header.php templates/footer.php
 
+GENERATE = $(PHP) -f $(srcdir)/templates/generate.php
+
 index.html: $(srcdir)/templates/index.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(PHP) -f $(srcdir)/tools/generate.php $< > $@
+	$(GENERATE) $< > $@
 
 code.html: $(srcdir)/templates/code.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(PHP) -f $(srcdir)/tools/generate.php $< > $@
+	$(GENERATE) $< > $@
 
 guides.html: $(srcdir)/templates/guides.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(PHP) -f $(srcdir)/tools/generate.php $< > $@
+	$(GENERATE) $< > $@
 
-tools.html: $(srcdir)/templates/index.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(PHP) -f $(srcdir)/tools/generate.php $< > $@
+tools.html: $(srcdir)/templates/tools.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
+	$(GENERATE) $< > $@
