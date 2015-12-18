@@ -22,7 +22,7 @@ subdir = res
 
 include $(top)/config.mk
 
-HTML = code.html guides.html index.html tools.html
+HTML = code.html guides.html index.html tools.html education.html collection.html developers.html faq.html tech.html
 
 FILES = $(HTML) \
 	local.css \
@@ -53,4 +53,19 @@ guides.html: templates/guides.phtml $(GENFILES)
 	$(GENERATE) $< > $@
 
 tools.html: templates/tools.phtml $(GENFILES)
+	$(GENERATE) $< > $@
+
+education.html: templates/education.phtml $(GENFILES)
+	$(GENERATE) $< > $@
+
+collection.html: templates/collection.phtml $(GENFILES)
+	$(GENERATE) $< > $@
+
+developers.html: templates/developers.phtml $(GENFILES)
+	$(GENERATE) $< > $@
+
+faq.html: templates/faq.phtml $(GENFILES)
+	$(GENERATE) $< > $@
+
+tech.html: templates/tech.phtml $(GENFILES)
 	$(GENERATE) $< > $@
