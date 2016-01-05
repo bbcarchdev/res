@@ -32,10 +32,6 @@
 						<li><a href="/res/collection">Collection holders</a></li>
 						<li><a href="/res/developers">Product developers</a></li>
 						<li><a href="/res/faq">FAQ</a></li>
-						<li><a href="/res/guides">Guides</a></li>
-						<li><a href="http://acropolis.org.uk">Developer API</a></li>
-						<li><a href="/res/tools">Tools</a></li>
-						<li><a href="/res/code">Source code</a></li>
 					</ul>
 			</div></nav>
 			<div class="masthead"></div>

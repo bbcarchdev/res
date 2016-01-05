@@ -214,6 +214,7 @@ function page_header($title = null, $class = null)
 	include(dirname(__FILE__) . '/../templates/header.php');
 }
 
+
 function page_footer()
 {
 	include(dirname(__FILE__) . '/../templates/footer.php');

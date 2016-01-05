@@ -1,15 +1,16 @@
 body>header .masthead {
 	display: block;
-	background: #ec7139;
+	background: #000;
 }
 body.home>header .masthead {
-	background: #ec7139 url('masthead.png') 50% 50% no-repeat;
+	background: #000 url('/res/images/developer1.jpg') 50% 50% no-repeat;
+	background-size: cover;
 }
 body.home>section.keynav {
 	display: block;
 	position: relative;
-	background: #000;
-	color: #e2e2e2;
+	background: #01172A;
+	color: #fff;
 	width: auto;
 	max-width: none;
 	margin: -13pt -13pt 0 -13pt;
@@ -22,17 +23,17 @@ body.home>section.keynav:after {
 	overflow: hidden;
 }
 body.home section.keynav a {
-	color: #ec7139;
+	color: #fff;
 }
 body.home section.keynav>.inner {
-	max-width: 960px;
 	padding: 26pt 0 13pt 0;
-	margin: 0 auto;
+	margin: 0 auto;    
+	max-width: 960px;
 }
 body.home section.keynav dl.item {
-	margin: 0 13pt 26pt 13pt;
+	margin: 0;
 	float: left;
-	width: 45%;
+	width: 33.333%;
 	position: relative;
 }
 @media screen and (max-width: 700px) {
@@ -43,15 +44,28 @@ body.home section.keynav dl.item {
 }
 body.home section.keynav dt {
 	margin: 0 0 0.25em 0;
+	padding: 0 10px;
+	font-size: 20px;
 }
 body.home section.keynav dt>a {
 	text-decoration: none;
+	padding-top: 84px;
+	position: relative;
+	text-align: center;
+	display: block;
 }
 body.home section.keynav dt, body.home section.keynav dd {
-	padding-left: 84px;
 }
 body.home section.keynav dd {
 	margin-left: 0;
+	padding: 0 24px;
+	font-size: 20px;
+}
+body.home section.keynav dl:first-child dd{
+	padding-left: 0px;
+}
+body.home section.keynav dl:last-child dd{
+	padding-right: 0px;
 }
 body.home section.keynav .icon {
 	position: absolute;
@@ -62,6 +76,8 @@ body.home section.keynav .icon {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	text-decoration: none !important;
+	right: 0;
+  margin: auto;
 }
 body.home section.keynav dl#guides .icon {
 	background-image: url('246-route@2x.png');
@@ -99,4 +115,196 @@ img {
     border: none;
 }
 
+/* Refresh */
+/* Promo */
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+    padding: 50px 0 ;
+    position: relative;
+    z-index: 2;
+}
+.promo{
+	margin: 0 -13pt 0 -13pt;
+  width: auto;
+  max-width: none;
+  position: relative;
+  margin-bottom: 0;
+  display: block;
+  border: 0px;
+}
+.promo:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+.promo p {
+	font-size: 24px;
+}
+.promo--tech{
+  background-image: url(masthead.png);
+  background-color: #01172a;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.promo--tech:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 0;
+}
+.promo--tech h3{
+  color: white;
+  font-weight: normal;
+  font-size: 36px;
+}
+.promo--tech a {
+ color: white;
+ font-weight: bold;
+}
+.promo--tech__btn {
+  border: 3px solid white;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.promo--tech__btn span{
+  color: white;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.promo--tech__btn:hover {
+    background-color: white;
+}
 
+.promo--tech__btn:hover span{
+    color: #0b293f;
+}
+/* Sections */
+
+.promo--sections{
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.promo--sections .wrapper {
+  padding: 0;
+}
+.promo--sections__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.promo--sections__list__item {
+  margin: 0;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0px;
+  float: left;
+  background-size: cover;
+  background-position: 50% 50%;
+  list-style-type: none;
+  border-right: 1px solid black;
+}
+.promo--sections__list__item--education {
+ background-image: url(images/school1.jpg);
+}
+.promo--sections__list__item--collection {
+ background-image: url(images/collection1.jpg);
+}
+.promo--sections__list__item--developers {
+ background-image: url(images/developer2.jpg);
+}
+.home .promo--sections__list__item {
+  width: 33.3333%;
+}
+.promo--sections__list__item:last-child{
+  border-right: 0px solid black;
+}
+.promo--sections__list a{
+  display: block;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  display: block;
+  color: white;
+  position: relative;
+  height: 400px;
+}
+.promo--sections__list__item h4{
+ position: absolute;
+ bottom: 20px;
+ left: 20px;
+ color: white;
+ font-size: 30px;
+ font-weight: normal;
+ margin: 0;
+}
+.promo--sections__list__item a:before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 0;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.promo--sections__list__item a:hover:before{
+  background-color: rgba(0,0,0,0.2);
+}
+/*Promo into*/
+.promo-intro{
+	padding: 0px 0;
+}
+.promo-intro .wrapper{
+	padding: 25px;
+}
+.promo-intro h1 {
+  font-size: 3em;
+}
+.promo-intro p {
+  font-size: 1.4em;
+}
+
+/*Masthead*/
+.education .masthead, .collection .masthead, .developers .masthead {
+   height: 360px;
+   background-size: cover;
+   background-position: 50% 0%;
+   background-repeat: no-repeat;
+}
+.education .masthead {
+   background-image: url('images/school1.jpg');
+}
+/*Collection*/
+.collection .masthead {
+   background-image: url('images/collection1.jpg');
+}
+/*Collection*/
+.developers .masthead {
+   background-image: url('images/developer2.jpg');
+}
+/*Collection*/
+.tech .masthead {
+   background-image: url('/res/masthead.png') !important;
+   background-size: auto 100% !important;
+   background-color: #01172A !important;
+}
