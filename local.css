@@ -219,7 +219,7 @@ img {
   border-right: 1px solid black;
 }
 .promo--sections__list__item--education {
- background-image: url(images/school1.jpg);
+ background-image: url(images/education4.jpg);
 }
 .promo--sections__list__item--collection {
  background-image: url(images/collection1.jpg);
@@ -288,15 +288,16 @@ img {
 .education .masthead, .collection .masthead, .developers .masthead {
    height: 360px;
    background-size: cover;
-   background-position: 50% 0%;
+   background-position: 50% 25%;
    background-repeat: no-repeat;
 }
 .education .masthead {
-   background-image: url('images/school1.jpg');
+   background-image: url('images/education4.jpg');
 }
 /*Collection*/
 .collection .masthead {
    background-image: url('images/collection1.jpg');
+   background-position: 50% 0%;
 }
 /*Collection*/
 .developers .masthead {
@@ -307,4 +308,86 @@ img {
    background-image: url('/res/masthead.png') !important;
    background-size: auto 100% !important;
    background-color: #01172A !important;
+}
+.promo--collection__list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-indent: -999999px;
+	overflow: hidden;
+}
+.promo--collection__list__item {
+	width: 11.111%;
+	float: left;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.promo--collection__list__item a{
+	display: block;
+	height: 50px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+	margin: 25px auto;
+	max-width: 320px;
+	-webkit-filter: grayscale(0);
+   filter: grayscale(0);
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+}
+.promo--collection__list__item a:hover{
+	-webkit-filter: grayscale(0);
+   filter: grayscale(0);
+}
+@media screen and (max-width: 960px) {
+	.promo--collection__list__item {
+		width: 100%;
+		float: none;
+	}
+}
+.promo--collection__list__item--the-national-archives a {
+	background-image: url(/res/images/logos/the-national-archives.png);
+}
+.promo--collection__list__item--wellcome-trust a {
+	background-image: url(/res/images/logos/wellcome-trust.png);
+}
+.promo--collection__list__item--british-museum a {
+	background-image: url(/res/images/logos/british-museum.png);
+}
+.promo--collection__list__item--bbc-shakespeare-archive-resource a {
+	background-image: url(/res/images/logos/bbc-shakespeare-archive-resource.jpg);
+}
+.promo--collection__list__item--british-library a {
+	background-image: url(/res/images/logos/british-library.png);
+}
+.promo--collection__list__item--peoples-collection-wales a {
+	background-image: url(/res/images/logos/peoples-collection-wales.png);
+}
+.promo--collection__list__item--wikidata a {
+	background-image: url(/res/images/logos/wikidata.png);
+}
+.promo--collection__list__item--europeana a {
+	background-image: url(/res/images/logos/europeana.png);
+}
+.promo--collection__list__item--natural-history-museum a {
+	background-image: url(/res/images/logos/natural-history-museum.png);
+}
+
+a:link, a:visited {
+  color: #0C6BC1;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #0055A2;
+}
+.img--full{
+	width: 100%;
+}
+
+.img--half{
+	width: 26%;
+	display: inline;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
