@@ -1,6 +1,5 @@
 body>header .masthead {
 	display: block;
-	background: #000;
 }
 body.home>header .masthead {
 	background: #000 url('/res/images/developer1.jpg') 50% 50% no-repeat;
@@ -36,7 +35,7 @@ body.home section.keynav dl.item {
 	width: 33.333%;
 	position: relative;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 	body.home section.keynav dl.item {
 		float: none;
 		width: inherit;
@@ -108,9 +107,6 @@ body>footer>p.logos {
 body>footer>p.logos>a {
 	padding-right: 2em;
 }
-a#bufvc-logo {
-	position: absolute;
-}
 img {
     border: none;
 }
@@ -125,6 +121,12 @@ img {
     padding: 50px 0 ;
     position: relative;
     z-index: 2;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+	.wrapper {
+   padding: 25px 13pt ;
+	}
 }
 .promo{
 	margin: 0 -13pt 0 -13pt;
@@ -198,9 +200,11 @@ img {
   padding: 0;
   list-style-type: none;
   margin-bottom: 0;
+  background-color: #010C15;
+  color: white;
 }
-.promo--sections .wrapper {
-  padding: 0;
+.promo--sections .wrapper{
+   padding-bottom: 0;
 }
 .promo--sections__list{
   margin: 0;
@@ -230,6 +234,11 @@ img {
 .home .promo--sections__list__item {
   width: 33.3333%;
 }
+@media screen and (max-width: 768px) {
+	.home .promo--sections__list__item {
+	  width: 100%;
+	}
+}
 .promo--sections__list__item:last-child{
   border-right: 0px solid black;
 }
@@ -238,12 +247,16 @@ img {
   font-size: 26px;
   font-weight: normal;
   text-align: center;
-  height: 100px;
   overflow: hidden;
   display: block;
   color: white;
   position: relative;
-  height: 400px;
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+	.promo--sections__list a{
+	  height: 200px;
+	}
 }
 .promo--sections__list__item h4{
  position: absolute;
@@ -329,15 +342,17 @@ img {
 	background-size: contain;
 	background-position: 50% 50%;
 	margin: 25px auto;
-	max-width: 320px;
-	-webkit-filter: grayscale(0);
-   filter: grayscale(0);
-  -webkit-transition: -webkit-filter 0.2s;
-  transition: filter 0.2s;
+	max-width: 200px;
+  opacity: 0.7;
+	-webkit-filter: grayscale(1);
+   filter: grayscale(1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .promo--collection__list__item a:hover{
 	-webkit-filter: grayscale(0);
    filter: grayscale(0);
+   opacity: 1;
 }
 @media screen and (max-width: 960px) {
 	.promo--collection__list__item {
@@ -372,7 +387,49 @@ img {
 .promo--collection__list__item--natural-history-museum a {
 	background-image: url(/res/images/logos/natural-history-museum.png);
 }
+.promo--powered{
 
+}
+.promo--collaboration__list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+.promo--collaboration__list__item{
+	width: 33.333%;
+	float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+	.promo--collaboration__list__item{
+		width: 100%;
+		float: none;
+	  padding: 0;
+	}
+}
+.promo--collaboration__list__item:before{
+	content: "";
+	display: block;
+	width: 200px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-position: 50% 100%;
+  margin-bottom: 20px;
+}
+.promo--collaboration__list__item--touchpress:before{
+	background-image: url(/res/images/logos/touchpress.png);
+}
+.promo--collaboration__list__item--amplify:before{
+	background-image: url(/res/images/logos/amplify.png);
+}
+.promo--collaboration__list__item--gooii:before{
+	background-image: url(/res/images/logos/gooii.png);
+}
 a:link, a:visited {
   color: #0C6BC1;
   text-decoration: none;
