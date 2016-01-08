@@ -2,7 +2,7 @@ body>header .masthead {
 	display: block;
 }
 body.home>header .masthead {
-	background: #000 url('/res/images/developer1.jpg') 50% 50% no-repeat;
+	background: #000 url('/res/images/promovideo.png') 50% 50% no-repeat;
 	background-size: cover;
 }
 body.home>section.keynav {
@@ -299,7 +299,6 @@ img {
 
 /*Masthead*/
 .education .masthead, .collection .masthead, .developers .masthead {
-   height: 360px;
    background-size: cover;
    background-position: 50% 25%;
    background-repeat: no-repeat;

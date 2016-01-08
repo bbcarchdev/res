@@ -25,7 +25,8 @@
 	</head>
 	<body<?php echo $bodyclassattr; ?>>
 		<header>
-			<nav class="global"><div class="inner">
+			<nav class="global">
+				<div class="inner">
 					<ul>
 						<li class="logo"><a href="/res/"><abbr title="Research &amp; Education Space">RES</abbr></a></li>
 						<li><a href="/res/education">Education</a></li>
@@ -33,8 +34,10 @@
 						<li><a href="/res/developers">Products</a></li>
 						<li><a href="/res/faq">FAQ</a></li>
 					</ul>
-			</div></nav>
+				</div>
+			</nav>
 			<div class="masthead">
+				<?php echo $promovideoiframe; ?>
 			</div>
 			<h1><?php echo $title; ?></h1>
 		</header>

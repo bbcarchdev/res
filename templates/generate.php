@@ -193,7 +193,7 @@ function pretty_html_tag($tag)
 	return $tag;
 }
 
-function page_header($title = null, $class = null)
+function page_header($title = null, $class = null, $promovideo = null)
 {
 	if(strlen($title))
 	{
@@ -209,7 +209,15 @@ function page_header($title = null, $class = null)
 	}
 	else
 	{
-		$bodyclassattr = '';
+		$bodyclassattr = ' class="' . _e($class) . '"';
+	}	
+	if(strlen($promovideo))
+	{
+		$promovideoiframe = '<iframe src="https://player.vimeo.com/video/151043150?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+	}
+	else
+	{
+		$promovideoiframe = '';
 	}
 	include(dirname(__FILE__) . '/../templates/header.php');
 }
