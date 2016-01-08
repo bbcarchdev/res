@@ -318,6 +318,26 @@ margin-top: 0;
   font-size: 1.4em;
 }
 
+.promo--education{
+  background-image: url(/res/images/developer3.jpg);
+  background-color: #01172a;
+  background-size: cover;
+  color: white;
+  position: relative;
+  background-position: 50% 50%;
+}
+.promo--education:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
 /*Masthead*/
 .education .masthead, .collection .masthead, .developers .masthead {
    background-size: cover;
