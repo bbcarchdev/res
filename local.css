@@ -2,10 +2,25 @@ body>header .masthead {
 	display: block;
 }
 body.home>header .masthead {
-	background: #000 url('/res/images/promovideo.png') 50% 50% no-repeat;
+	/*background: #000 url('/res/images/promovideo.png') 50% 50% no-repeat;*/
+	background-color: #3C0316;
 	background-size: cover;
 }
-body.home>section.keynav {
+body.home>header .masthead:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #D95B61;
+	z-index: 0;
+}
+body.tech>header .masthead:before {
+	content: none;
+}
+body.tech>section.keynav {
 	display: block;
 	position: relative;
 	background: #01172A;
@@ -14,59 +29,59 @@ body.home>section.keynav {
 	max-width: none;
 	margin: -13pt -13pt 0 -13pt;
 }
-body.home>section.keynav:after {
+body.tech>section.keynav:after {
 	display: block;
 	clear: both;
 	height: 0;
 	content: '';
 	overflow: hidden;
 }
-body.home section.keynav a {
+body.tech section.keynav a {
 	color: #fff;
 }
-body.home section.keynav>.inner {
+body.tech section.keynav>.inner {
 	padding: 26pt 0 13pt 0;
 	margin: 0 auto;    
 	max-width: 960px;
 }
-body.home section.keynav dl.item {
+body.tech section.keynav dl.item {
 	margin: 0;
 	float: left;
 	width: 33.333%;
 	position: relative;
 }
 @media screen and (max-width: 768px) {
-	body.home section.keynav dl.item {
+	body.tech section.keynav dl.item {
 		float: none;
 		width: inherit;
 	}
 }
-body.home section.keynav dt {
+body.tech section.keynav dt {
 	margin: 0 0 0.25em 0;
 	padding: 0 10px;
 	font-size: 20px;
 }
-body.home section.keynav dt>a {
+body.tech section.keynav dt>a {
 	text-decoration: none;
 	padding-top: 84px;
 	position: relative;
 	text-align: center;
 	display: block;
 }
-body.home section.keynav dt, body.home section.keynav dd {
+body.tech section.keynav dt, body.home section.keynav dd {
 }
-body.home section.keynav dd {
+body.tech section.keynav dd {
 	margin-left: 0;
 	padding: 0 24px;
 	font-size: 20px;
 }
-body.home section.keynav dl:first-child dd{
+body.tech section.keynav dl:first-child dd{
 	padding-left: 0px;
 }
-body.home section.keynav dl:last-child dd{
+body.tech section.keynav dl:last-child dd{
 	padding-right: 0px;
 }
-body.home section.keynav .icon {
+body.tech section.keynav .icon {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -78,19 +93,19 @@ body.home section.keynav .icon {
 	right: 0;
   margin: auto;
 }
-body.home section.keynav dl#guides .icon {
+body.tech section.keynav dl#guides .icon {
 	background-image: url('246-route@2x.png');
 }
-body.home section.keynav dl#api .icon {
+body.tech section.keynav dl#api .icon {
 	background-image: url('583-broadcast@2x.png');
 }
-body.home section.keynav dl#tools .icon {
+body.tech section.keynav dl#tools .icon {
 	background-image: url('519-tools-1@2x.png');
 }
-body.home section.keynav dl#code .icon {
+body.tech section.keynav dl#code .icon {
 	background-image: url('521-dropzone@2x.png');
 }
-body.home section.keynav + section {
+body.tech section.keynav + section {
 	border-top: none;
 }
 
@@ -142,7 +157,13 @@ img {
     display:table;
     clear:both;
   }
+ .promo h1 {
+margin-top: 0;
+  }
 .promo p {
+	font-size: 24px;
+}
+.promo ul {
 	font-size: 24px;
 }
 .promo--tech{
@@ -323,7 +344,7 @@ img {
 }
 .promo--collection__list{
 	list-style-type: none;
-	margin: 0;
+	margin: 0 0 50px 0;
 	padding: 0;
 	text-indent: -999999px;
 	overflow: hidden;
@@ -387,14 +408,25 @@ img {
 	background-image: url(/res/images/logos/natural-history-museum.png);
 }
 .promo--powered{
-
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.promo--powered__img{
+	margin: auto;
+	display: block;
 }
 .promo--collaboration__list{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	font-size: 20px;
+
 }
+.promo--collaboration__list:after {
+  content:"";
+  display:table;
+  clear:both;
+ }
 .promo--collaboration__list__item{
 	width: 33.333%;
 	float: left;
