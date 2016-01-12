@@ -168,13 +168,13 @@ margin-top: 0;
 }
 .promo--tech{
   background-image: url(masthead.png);
-  background-color: #01172a;
+  background-color: #268bd2;
   background-size: cover;
   color: white;
   position: relative;
 }
 .promo--tech:before{
-  content: "";
+  /*content: "";*/
   display: block;
   position: absolute;
   top: 0;
@@ -213,7 +213,7 @@ margin-top: 0;
 }
 
 .promo--tech__btn:hover span{
-    color: #0b293f;
+    color: #268bd2;
 }
 /* Sections */
 
@@ -241,7 +241,7 @@ margin-top: 0;
   background-size: cover;
   background-position: 50% 50%;
   list-style-type: none;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
 }
 .promo--sections__list__item--education {
  background-image: url(images/education4.jpg);
@@ -252,8 +252,9 @@ margin-top: 0;
 .promo--sections__list__item--developers {
  background-image: url(images/developer2.jpg);
 }
-.home .promo--sections__list__item {
+.home .promo--sections__list__item, .faq .promo--sections__list__item {
   width: 33.3333%;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
 	.home .promo--sections__list__item {
@@ -263,28 +264,39 @@ margin-top: 0;
 .promo--sections__list__item:last-child{
   border-right: 0px solid black;
 }
+
 .promo--sections__list a{
   display: block;
   font-size: 26px;
   font-weight: normal;
   text-align: center;
   overflow: hidden;
-  display: block;
+  display: table;
   color: white;
   position: relative;
   height: 300px;
+  width: 101%;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
 	.promo--sections__list a{
 	  height: 200px;
 	}
 }
+
+.promo--sections__link__inner{
+	display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 11;
+}
 .promo--sections__list__item h4{
- position: absolute;
+/* position: absolute;
  bottom: 20px;
- left: 20px;
+ left: 20px;*/
  color: white;
- font-size: 30px;
+ font-size: 36px;
  font-weight: normal;
  margin: 0;
 }
@@ -358,9 +370,11 @@ margin-top: 0;
 }
 /*Collection*/
 .tech .masthead {
-   background-image: url('/res/masthead.png') !important;
-   background-size: auto 100% !important;
-   background-color: #01172A !important;
+  background-image: url('/res/masthead.png') !important;
+  background-size: auto 100%;
+  background-color: #01172A;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .promo--collection__list{
 	list-style-type: none;
@@ -481,13 +495,13 @@ margin-top: 0;
 .promo--collaboration__list__item--gooii:before{
 	background-image: url(/res/images/logos/gooii.png);
 }
-a:link, a:visited {
+/*a:link, a:visited {
   color: #0C6BC1;
   text-decoration: none;
 }
 a:hover, a:active {
   color: #0055A2;
-}
+}*/
 .img--full{
 	width: 100%;
 }

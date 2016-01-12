@@ -9,7 +9,7 @@
 
 SUBDIRS = templates
 
-reshtdoc_DATA = index.html code.html guides.html tools.html education.html collection.html developers.html faq.html tech.html
+reshtdoc_DATA = index.html code.html guides.html tools.html education.html collections.html products.html faq.html developers.html
 
 CLEANFILES = $(reshtdoc_DATA)
 
@@ -34,14 +34,14 @@ tools.html: $(srcdir)/templates/tools.phtml $(srcdir)/templates/generate.php $(T
 education.html: $(srcdir)/templates/education.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
 	$(GENERATE) $< > $@
 
-collection.html: $(srcdir)/templates/collection.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
+collections.html: $(srcdir)/templates/collections.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
 	$(GENERATE) $< > $@
 
-developers.html: $(srcdir)/templates/developers.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
+products.html: $(srcdir)/templates/products.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
 	$(GENERATE) $< > $@
 
 faq.html: $(srcdir)/templates/faq.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
 	$(GENERATE) $< > $@
 
-tech.html: $(srcdir)/templates/tech.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
+developers.html: $(srcdir)/templates/developers.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
 	$(GENERATE) $< > $@

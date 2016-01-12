@@ -193,7 +193,7 @@ function pretty_html_tag($tag)
 	return $tag;
 }
 
-function page_header($title = null, $class = null, $promovideo = null)
+function page_header($title = null, $class = null, $promovideo = null, $secondarynav = null)
 {
 	if(strlen($title))
 	{
@@ -219,11 +219,15 @@ function page_header($title = null, $class = null, $promovideo = null)
 	{
 		$promovideoiframe = '';
 	}
+	if(strlen($secondarynav))
+	{
+		$secondarynavtemplate = '<nav class="secondarynav"><div class="inner"><ul><li><a href="https://bbcarchdev.github.io/res/guides">Guides</a></li><li><a href="//acropolis.org.uk">Developer API</a></li><li><a href="https://bbcarchdev.github.io/res/tools">Tools</a></li><li><a href="https://bbcarchdev.github.io/res/code">Source Code</a></li></ul></div></nav>';
+	}
+	else
+	{
+		$secondarynavtemplate = '';
+	}
 	include(dirname(__FILE__) . '/../templates/header.php');
-}
-function page_video()
-{
-	include(dirname(__FILE__) . '/../templates/video.php');
 }
 
 function page_footer()
