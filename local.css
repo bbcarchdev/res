@@ -397,10 +397,11 @@ margin-top: 0;
 }
 .promo--collection__list__item a{
 	display: block;
+	display: flex;
 	height: 50px;
-	background-repeat: no-repeat;
+/*	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: 50% 50%;
+	background-position: 50% 50%;*/
 	margin: 25px auto;
 	max-width: 200px;
   opacity: 0.7;
@@ -414,13 +415,21 @@ margin-top: 0;
    filter: grayscale(0);
    opacity: 1;
 }
+.promo--collection__list__item img {
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+}
+
 @media screen and (max-width: 960px) {
 	.promo--collection__list__item {
 		width: 100%;
 		float: none;
 	}
 }
-.promo--collection__list__item--the-national-archives a {
+/*.promo--collection__list__item--the-national-archives a {
 	background-image: url(/res/images/logos/the-national-archives.png);
 }
 .promo--collection__list__item--wellcome-trust a {
@@ -446,7 +455,7 @@ margin-top: 0;
 }
 .promo--collection__list__item--natural-history-museum a {
 	background-image: url(/res/images/logos/natural-history-museum.png);
-}
+}*/
 .promo--powered{
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
