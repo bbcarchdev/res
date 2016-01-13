@@ -213,7 +213,26 @@ function page_header($title = null, $class = null, $promovideo = null, $secondar
 	}	
 	if(strlen($promovideo))
 	{
-		$promovideoiframe = '<iframe src="https://player.vimeo.com/video/151043150?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+		$promovideoiframe = '
+<div id="mediaPlayer" ></div>
+	<script type="text/javascript">
+	require(["bump-3"],function ($) {
+    var settings = {
+       product : "news",
+       responsive: true,
+       playlistObject: {
+           title:"Buried in a Blizzard",
+           holdingImageURL:"http://ichef.bbci.co.uk/images/ic/$recipe/p03b05gv.jpg",
+           items : [ {
+                 vpid : "p03b01jz",
+                 duration : 1170
+           }]
+       },
+    }
+    var mediaPlayer = $("#mediaPlayer").player(settings);
+    mediaPlayer.load();
+});
+</script>';
 	}
 	else
 	{
