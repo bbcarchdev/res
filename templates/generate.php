@@ -222,9 +222,9 @@ function page_header($title = null, $class = null, $promovideo = null, $secondar
        responsive: true,
        playlistObject: {
            title:"Buried in a Blizzard",
-           holdingImageURL:"http://ichef.bbci.co.uk/images/ic/$recipe/p03b05gv.jpg",
+           holdingImageURL:"http://ichef.bbci.co.uk/images/ic/$recipe/p03dty2z.jpg",
            items : [ {
-                 vpid : "p03b01jz",
+                 vpid : "p03dty2z",
                  duration : 1170
            }]
        },
