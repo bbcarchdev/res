@@ -24,6 +24,7 @@
 		<link rel="stylesheet" type="text/css" href="local.css">
 		<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/painting-by-numbers/ie78.css" /><![endif]-->
 
+<script type="text/javascript" src="/res/js/modernizr.js"></script>
 <script type="text/javascript" src="http://static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js"></script>
 <script type="text/javascript">
 bbcRequireMap = {
@@ -34,7 +35,7 @@ bbcRequireMap = {
 require({ paths: bbcRequireMap,
     waitSeconds: 30 });
 </script>
-		
+
 	</head>
 	<body<?php echo $bodyclassattr; ?>>
 		<header>

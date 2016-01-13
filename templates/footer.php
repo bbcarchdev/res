@@ -6,7 +6,7 @@
         </p>
         <p class="footer__links">
           <a href="/res/faq">FAQ</a> |
-          <a href="mailto:resfeedback@@bbc.co.uk">Contact us</a> |
+          <a href="mailto:resfeedback@bbc.co.uk">Contact us</a> |
           <a href="https://twitter.com/RES_project">Follow us on Twitter</a> |
           <a href="https://twitter.com/share?text=RES+-+Research+and+education+space+-+&amp;url=http%3a%2f%2fwww.res.space" title="share on twitter - opens in new window" target="_blank">Share</a>
 			  </p>

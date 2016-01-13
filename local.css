@@ -290,6 +290,8 @@ margin-top: 0;
   text-align: center;
   vertical-align: middle;
   z-index: 11;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .promo--sections__list__item h4{
 /* position: absolute;
@@ -299,6 +301,10 @@ margin-top: 0;
  font-size: 36px;
  font-weight: normal;
  margin: 0;
+}
+.promo--sections__list__item p{
+ max-width: 300px;
+ margin: auto;
 }
 .promo--sections__list__item a:before{
   content: "";
