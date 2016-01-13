@@ -259,6 +259,11 @@ margin-top: 0;
 @media screen and (max-width: 768px) {
 	.home .promo--sections__list__item {
 	  width: 100%;
+  	border-bottom: 1px solid white;
+	}
+  .promo--sections__list__item {
+	  width: 100%;
+  	border-bottom: 1px solid white;
 	}
 }
 .promo--sections__list__item:last-child{
