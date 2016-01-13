@@ -218,13 +218,13 @@ function page_header($title = null, $class = null, $promovideo = null, $secondar
 	<script type="text/javascript">
 	require(["bump-3"],function ($) {
     var settings = {
-       product : "news",
+       product : "res",
        responsive: true,
        playlistObject: {
            title:"Buried in a Blizzard",
-           holdingImageURL:"http://ichef.bbci.co.uk/images/ic/$recipe/p03dty2z.jpg",
+           holdingImageURL:"http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.png",
            items : [ {
-                 vpid : "p03dty2z",
+                 vpid : "p03dty31",
                  duration : 1170
            }]
        },
