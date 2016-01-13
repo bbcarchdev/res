@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="utf-8" />
 		<!--[if lt IE 9]><script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script><![endif]-->
-		<title>Research &amp; Education Space</title>
+		<title>Connecting the UK’s publicly held archives to inspire new ways of learning — Research &amp; Education Space</title>
 		<link rel="stylesheet" type="text/css" href="/painting-by-numbers/style.css">
 		<link rel="stylesheet" type="text/css" href="/painting-by-numbers/print.css" media="print">
 		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6699852/732262/css/fonts.css">
@@ -51,8 +51,14 @@ require({ paths: bbcRequireMap,
 				</div>
 			</nav>
 			<div class="masthead">
-				
-<div id="mediaPlayer" style="height: 1300px; width: 740px;"></div>
+							</div>
+
+							<h1>Connecting the UK’s publicly held archives to inspire new ways of learning</h1>
+		</header>
+	    <section class="smp"> 
+<div id="mediaPlayerWrapper">
+  <div id="mediaPlayer" style="height: 960px; width: 549px;"></div>
+</div>
 <script>
 require(["bump-3"], function($) {
   console.log("loaded!");
@@ -64,9 +70,9 @@ require(["bump-3"], function($) {
     preferHtmlOnDesktop: true,
     preferHtmlOnMobile: true,
     noTracking: true,
-		ui: {
-			colour: "#0404040"
-		},
+    ui: {
+      colour: "#0404040"
+    },
     playlistObject: {
       title: "Test",
       summary: "This is a test item",
@@ -83,11 +89,8 @@ require(["bump-3"], function($) {
   mediaPlayer.load();
 });
 </script>
-			</div>
-
-							<h1>Research &amp; Education Space</h1>
-		</header>
-			<section class="promo promo-intro">
+    </section>
+		<section class="promo promo-intro">
       <div class="wrapper">   
   			<h1>
   				Welcome to the Research and Education Space (RES) – an initiative to improve access to public archives for use in education.
@@ -135,12 +138,8 @@ require(["bump-3"], function($) {
       </div>
     </section>
 		<footer>
-      <div class="wrapper">
-        <p>Copyright © 2016 BBC</p>
-        <p>
-          The text of these pages is licensed under the terms of the Open Government Licence v2.0. Please note that this does not apply to fonts and images (including logos and trademarks).
-        </p>
-        <p class="footer__links">
+      <div class="wrapper">        
+      	<p class="footer__links">
           <a href="/res/faq">FAQ</a> |
           <a href="mailto:resfeedback@bbc.co.uk">Contact us</a> |
           <a href="https://twitter.com/RES_project">Follow us on Twitter</a> |
@@ -153,6 +152,10 @@ require(["bump-3"], function($) {
           <a href="http://www.jisc.ac.uk/" title="Jisc"><img src="/res/jisclogo.png" alt="Jisc"></a>
           <a id="bufvc-logo" href="http://www.bufvc.ac.uk/" title="BUFVC"><img src="/res/bufvclogo.png" alt="BUFVC"></a>
           <a href="http://www.bbc.co.uk/" title="BBC"><img src="/res/bbclogo.png" alt="BBC"></a>
+        </p>
+        <p>Copyright © 2016 BBC</p>
+        <p>
+          The text of these pages is licensed under the terms of the Open Government Licence v2.0. Please note that this does not apply to fonts and images (including logos and trademarks).
         </p>
       </div>
 		</footer>

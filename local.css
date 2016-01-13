@@ -1,8 +1,7 @@
 body>header .masthead {
 	display: block;
 }
-body.home>header .masthead {
-	/*background: #000 url('/res/images/promovideo.png') 50% 50% no-repeat;*/
+/*body.home>header .masthead {
 	background-color: #3C0316;
 	background-size: cover;
 }
@@ -16,7 +15,7 @@ body.home>header .masthead:before {
 	height: 100%;
 	background-color: #D95B61;
 	z-index: 0;
-}
+}*/
 body.tech>header .masthead:before {
 	content: none;
 }
@@ -257,12 +256,9 @@ margin-top: 0;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
-	.home .promo--sections__list__item {
+	.promo--sections__list__item, .home .promo--sections__list__item, .faq .promo--sections__list__item {
 	  width: 100%;
-  	border-bottom: 1px solid white;
-	}
-  .promo--sections__list__item {
-	  width: 100%;
+  	border-right: 0px solid white;
   	border-bottom: 1px solid white;
 	}
 }
@@ -335,7 +331,12 @@ margin-top: 0;
 	padding: 25px;
 }
 .promo-intro h1 {
-  font-size: 3em;
+  font-size: 2em;
+}
+@media screen and (min-width: 768px) {
+	.promo-intro h1 {
+  	font-size: 3em;
+  }
 }
 .promo-intro p {
   font-size: 1.4em;
@@ -362,10 +363,14 @@ margin-top: 0;
 }
 
 /*Masthead*/
-.education .masthead, .collection .masthead, .developers .masthead {
+.home .masthead, .education .masthead, .collection .masthead, .developers .masthead {
    background-size: cover;
    background-position: 50% 25%;
    background-repeat: no-repeat;
+}
+.home .masthead {
+   background-image: url('images/banner1.png');
+   background-position: 50% 60%;
 }
 .education .masthead {
    background-image: url('images/education4.jpg');

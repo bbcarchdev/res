@@ -1,8 +1,43 @@
 <?php /***** Process this file with tools/generate.php to produce HTML *****/
 
-page_header(null, 'home', true);
+page_header('Connecting the UK’s publicly held archives to inspire new ways of learning', 'home');
 
 ?>
+    <section class="smp"> 
+<div id="mediaPlayerWrapper">
+  <div id="mediaPlayer" style="height: 960px; width: 549px;"></div>
+</div>
+<script>
+require(["bump-3"], function($) {
+  console.log("loaded!");
+  var settings = {
+    responsive: true,
+    product: "res",
+    mediaProfile: "pc",
+    allowCasting: true,
+    preferHtmlOnDesktop: true,
+    preferHtmlOnMobile: true,
+    noTracking: true,
+    ui: {
+      colour: "#0404040"
+    },
+    playlistObject: {
+      title: "Test",
+      summary: "This is a test item",
+      holdingImageURL: "http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.png",
+      items: [
+        {
+          vpid: "p03dty31",
+          duration: 1170
+        }
+      ]
+    }
+  };
+  var mediaPlayer = $("#mediaPlayer").player(settings);
+  mediaPlayer.load();
+});
+</script>
+    </section>
 		<section class="promo promo-intro">
       <div class="wrapper">   
   			<h1>
