@@ -214,25 +214,37 @@ function page_header($title = null, $class = null, $promovideo = null, $secondar
 	if(strlen($promovideo))
 	{
 		$promovideoiframe = '
-<div id="mediaPlayer" ></div>
-	<script type="text/javascript">
-	require(["bump-3"],function ($) {
-    var settings = {
-       product : "res",
-       responsive: true,
-       playlistObject: {
-           title:"Buried in a Blizzard",
-           holdingImageURL:"http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.png",
-           items : [ {
-                 vpid : "p03dty31",
-                 duration : 1170
-           }]
-       },
+<div id="mediaPlayer" style="height: 1300px; width: 740px;"></div>
+<script>
+require(["bump-3"], function($) {
+  console.log("loaded!");
+  var settings = {
+    responsive: true,
+    product: "res",
+    mediaProfile: "pc",
+    allowCasting: true,
+    preferHtmlOnDesktop: true,
+    preferHtmlOnMobile: true,
+    noTracking: true,
+    colour: #404040,
+    playlistObject: {
+      title: "Test",
+      summary: "This is a test item",
+      holdingImageURL: "http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.jpg",
+      items: [
+        {
+          vpid: "p03dty31",
+          duration: 1170
+        }
+      ]
     }
-    var mediaPlayer = $("#mediaPlayer").player(settings);
-    mediaPlayer.load();
+  };
+  var mediaPlayer = $("#mediaPlayer").player(settings);
+  mediaPlayer.load();
 });
-</script>';
+</script>
+
+';
 	}
 	else
 	{
