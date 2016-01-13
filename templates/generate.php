@@ -226,10 +226,11 @@ require(["bump-3"], function($) {
     preferHtmlOnDesktop: true,
     preferHtmlOnMobile: true,
     noTracking: true,
+    colour: 040404,
     playlistObject: {
       title: "Test",
       summary: "This is a test item",
-      holdingImageURL: "http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.jpg",
+      holdingImageURL: "http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.png",
       items: [
         {
           vpid: "p03dty31",
@@ -242,7 +243,6 @@ require(["bump-3"], function($) {
   mediaPlayer.load();
 });
 </script>
-
 ';
 	}
 	else
