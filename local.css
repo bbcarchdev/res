@@ -363,7 +363,7 @@ margin-top: 0;
 }
 
 /*Masthead*/
-.home .masthead, .education .masthead, .collection .masthead, .developers .masthead {
+.home .masthead, .education .masthead, .collection .masthead, .developers .masthead, .faq .masthead {
    background-size: cover;
    background-position: 50% 25%;
    background-repeat: no-repeat;
@@ -383,6 +383,10 @@ margin-top: 0;
 /*Collection*/
 .developers .masthead {
    background-image: url('images/developer2.jpg');
+}
+.faq .masthead {
+   background-image: url('images/education5.jpg');
+   background-position: 50% 40%;
 }
 /*Collection*/
 .tech .masthead {

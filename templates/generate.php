@@ -227,7 +227,7 @@ require(["bump-3"], function($) {
     preferHtmlOnMobile: true,
     noTracking: true,
 		ui: {
-			colour: "#0404040"
+			colour: "#268bd2"
 		},
     playlistObject: {
       title: "Test",
