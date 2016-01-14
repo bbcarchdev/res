@@ -49,7 +49,7 @@ body.tech section.keynav dl.item {
 	width: 33.333%;
 	position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	body.tech section.keynav dl.item {
 		float: none;
 		width: inherit;
@@ -137,9 +137,9 @@ img {
     z-index: 2;
     box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	.wrapper {
-   padding: 25px 13pt ;
+   padding: 25px 13pt;
 	}
 }
 .promo{
@@ -255,7 +255,7 @@ margin-top: 0;
   width: 33.3333%;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.promo--sections__list__item, .home .promo--sections__list__item, .faq .promo--sections__list__item {
 	  width: 100%;
   	border-right: 0px solid white;
@@ -279,7 +279,7 @@ margin-top: 0;
   width: 101%;
   text-decoration: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.promo--sections__list a{
 	  height: 200px;
 	}
@@ -326,9 +326,6 @@ margin-top: 0;
 /*Promo into*/
 .promo-intro{
 	padding: 0px 0;
-}
-.promo-intro .wrapper{
-	padding: 25px;
 }
 .promo-intro h1 {
   font-size: 2em;
@@ -497,14 +494,31 @@ margin-top: 0;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.promo--collaboration__list__item{
 		width: 100%;
 		float: none;
 	  padding: 0;
 	}
 }
-.promo--collaboration__list__item:before{
+.promo--collaboration__list__item span{
+	display: block;
+	vertical-align: middle;
+	padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+	.promo--collaboration__list__item span{
+		display: table-cell;
+		height: 200px;
+	}
+}
+.promo--collaboration__list__item img{
+	width: 100%;
+	max-width: 300px;
+	display: block;
+	margin: auto;
+}
+/*.promo--collaboration__list__item:before{
 	content: "";
 	display: block;
 	width: 200px;
@@ -514,8 +528,8 @@ margin-top: 0;
   margin: auto;
   background-position: 50% 100%;
   margin-bottom: 20px;
-}
-.promo--collaboration__list__item--touchpress:before{
+}*/
+/*.promo--collaboration__list__item--touchpress:before{
 	background-image: url(/res/images/logos/touchpress.png);
 }
 .promo--collaboration__list__item--amplify:before{
@@ -523,7 +537,7 @@ margin-top: 0;
 }
 .promo--collaboration__list__item--gooii:before{
 	background-image: url(/res/images/logos/gooii.png);
-}
+}*/
 /*a:link, a:visited {
   color: #0C6BC1;
   text-decoration: none;
