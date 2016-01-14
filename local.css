@@ -391,20 +391,25 @@ margin-top: 0;
 .home .masthead:before {
    background-image: url('images/banner1.png');
    background-position: 50% 60%;
+	opacity: 1;
 }
 .education .masthead:before {
    background-image: url('images/education4.jpg');
+	opacity: 1;
 }
 .collection .masthead:before {
    background-image: url('images/collection1.jpg');
    background-position: 50% 0%;
+	opacity: 1;
 }
 .developers .masthead:before {
    background-image: url('images/developer2.jpg');
+	opacity: 1;
 }
 .faq .masthead:before {
    background-image: url('images/education5.jpg');
    background-position: 50% 40%;
+	opacity: 1;
 }
 .tech .masthead {
 	background-color: #268bd2;
