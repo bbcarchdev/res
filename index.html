@@ -1,1 +1,167 @@
-Could not open input file: ./tools/generate.php
+<!DOCTYPE html>
+<!--
+
+ Author: Mo McRoberts <mo.mcroberts@bbc.co.uk>
+
+ Copyright (c) 2014-2015 BBC
+
+ Licensed under the terms of the Open Government Licence v2.0
+
+-->
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+		<meta charset="utf-8" />
+		<!--[if lt IE 9]><script>document.createElement('header');document.createElement('nav');document.createElement('section');document.createElement('article');document.createElement('aside');document.createElement('footer');</script><![endif]-->
+		<title>Connecting the UK’s publicly held archives to inspire new ways of learning — Research &amp; Education Space</title>
+		<link rel="stylesheet" type="text/css" href="/painting-by-numbers/style.css">
+		<link rel="stylesheet" type="text/css" href="/painting-by-numbers/print.css" media="print">
+		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6699852/732262/css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,500,300italic,500italic|Inconsolata|Arapey">
+		<link rel="stylesheet" type="text/css" href="local.css">
+		<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/painting-by-numbers/ie78.css" /><![endif]-->
+    <!--[if lt IE 9]>
+        <script src="/res/js/respond.js"></script>
+    <![endif]-->
+<script type="text/javascript" src="/res/js/modernizr.js"></script>
+<script type="text/javascript" src="https://static.bbc.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js"></script>
+<script type="text/javascript">
+bbcRequireMap = {
+    "jquery-1.9":"https://static.bbc.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1",
+    "swfobject-2":"https://static.bbc.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
+        "bump-3":"https://emp.bbci.co.uk/emp/bump-3/bump-3"
+}
+require({ paths: bbcRequireMap,
+    waitSeconds: 30 });
+</script>
+
+	</head>
+	<body class="home">
+		<header>
+			<nav class="global">
+				<div class="inner">
+					<ul>
+						<li class="logo"><a href="/res/"><abbr title="Research &amp; Education Space">RES</abbr></a></li>
+						<li><a href="/res/education">Education</a></li>
+						<li><a href="/res/collections">Collections</a></li>
+						<li><a href="/res/products">Products</a></li>
+						<li><a href="/res/faq">FAQ</a></li> 
+					</ul>
+				</div>
+			</nav>
+			<div class="masthead">
+							</div>
+
+							<h1>Connecting the UK’s publicly held archives to inspire new ways of learning</h1>
+		</header>
+	    <section class="smp"> 
+<div id="mediaPlayerWrapper">
+  <div id="mediaPlayer" style="height: 960px; width: 549px;"></div>
+</div>
+<script>
+require(["bump-3"], function($) {
+  console.log("loaded!");
+  var settings = {
+    responsive: true,
+    product: "res",
+    mediaProfile: "pc",
+    allowCasting: true,
+    preferHtmlOnDesktop: true,
+    preferHtmlOnMobile: true,
+    noTracking: true,
+    ui: {
+      colour: "#0404040"
+    },
+    playlistObject: {
+      title: "Test",
+      summary: "This is a test item",
+      holdingImageURL: "http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.png",
+      items: [
+        {
+          vpid: "p03dty31",
+          duration: 1170
+        }
+      ]
+    }
+  };
+  var mediaPlayer = $("#mediaPlayer").player(settings);
+  mediaPlayer.load();
+});
+</script>
+    </section>
+		<section id="introduction" class="promo promo-intro">
+      <div class="wrapper">   
+  			<h1>
+  				Welcome to the Research and Education Space (RES) – an initiative to improve access to public archives for use in education.
+  			</h1>
+  			<p>
+  				Since 2012, the RES project has been working with teachers, students and academics, along with curators of world class digital collections and product developers to improve the resources and tools available in all levels of education.  RES is a partnership between <a href="https://www.jisc.ac.uk/">Jisc</a>, the <a href="http://bufvc.ac.uk/">British Universities Film &amp; Video Council (BUFVC)</a> and the <a href="https://www.bbc.co.uk/">BBC</a>. 
+  			</p>
+        <p>
+          The BBC has built an open platform which indexes and organises the digital <a href="/res/collections">collections</a> of libraries, museums, broadcasters and galleries to make their content more discoverable, accessible and usable to those in UK education and research. Images, TV and radio programmes, documents and text from world class organisations such as <a href="http://www.britishmuseum.org/">The British Museum</a>, <a href="http://www.bl.uk/">British Library</a>, <a href="http://www.nationalarchives.gov.uk/">The National Archives</a>, <a href="http://www.europeana.eu/portal/">Europeana</a>, <a href="http://www.wellcome.ac.uk/">Wellcome Trust</a> and the <a href="http://www.bbc.co.uk/">BBC</a> are all being indexed by RES. RES also enables <a href="/res/products">developers</a> to create digital educational products that will inspire learners, teachers and researchers by using applications powered by the RES platform.
+        </p>
+      </div>
+		</section>
+  	<section class="promo promo--sections">
+      <ul class="promo--sections__list">
+        <li class="promo--sections__list__item promo--sections__list__item--education">
+          <a class="promo--sections__link" href="/res/education">
+            <div class="promo--sections__link__inner">
+              <h4>Education</h4>
+              <p>Information for the Education sector</p>
+            </div>
+          </a>
+        </li>
+        <li class="promo--sections__list__item promo--sections__list__item--collection">
+          <a class="promo--sections__link" href="/res/collections">
+            <div class="promo--sections__link__inner">
+              <h4>Collections</h4>
+              <p>Information for curators of digital collections</p>
+            </div>
+          </a>
+        </li>
+        <li class="promo--sections__list__item promo--sections__list__item--developers">
+          <a class="promo--sections__link" href="/res/products">
+            <div class="promo--sections__link__inner">
+              <h4>Products</h4>
+              <p>Information for product developers</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+		</section>
+    <section class="promo promo--tech">
+      <div class="wrapper">
+        <h1>Technical information about the RES platform can be found in the developer resources guide.</h1>
+        <p><a class="promo--tech__btn" href="/res/developers"><span>Developer resources</span></a></p>
+      </div>
+    </section>
+		<footer>
+      <div class="wrapper">        
+      	<p class="footer__links">
+          <a href="/res/faq">FAQ</a> |
+          <a href="mailto:resfeedback@bbc.co.uk">Contact us</a> |
+          <a href="https://twitter.com/RES_project">Follow us on Twitter</a> |
+          <a href="https://twitter.com/share?text=RES+-+Research+and+education+space+-+&amp;url=http%3a%2f%2fwww.res.space" title="share on twitter - opens in new window" target="_blank">Share</a>
+			  </p>
+        <p>
+          RES is a partnership between Jisc, the British Universities Film & Video Council (BUFVC) and the BBC.
+        </p>
+        <p class="logos">
+          <a href="http://www.jisc.ac.uk/" title="Jisc"><img src="/res/jisclogo.png" alt="Jisc"></a>
+          <a id="bufvc-logo" href="http://www.bufvc.ac.uk/" title="BUFVC"><img src="/res/bufvclogo.png" alt="BUFVC"></a>
+          <a href="http://www.bbc.co.uk/" title="BBC"><img src="/res/bbclogo.png" alt="BBC"></a>
+        </p>
+        <p>Copyright © 2016 BBC</p>
+        <p>
+          The text of these pages is licensed under the terms of the Open Government Licence v2.0. Please note that this does not apply to fonts and images (including logos and trademarks).
+        </p>
+      </div>
+		</footer>
+	</body>
+</html>
+
+
+
+
