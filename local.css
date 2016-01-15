@@ -175,7 +175,7 @@ margin-top: 0;
 .promo--tech{
   background-image: url(masthead.png);
   background-color: #268bd2;
-  background-size: cover;
+  background-size: auto;
   color: white;
   position: relative;
 }
@@ -248,6 +248,7 @@ margin-top: 0;
   background-position: 50% 50%;
   list-style-type: none;
   border-right: 1px solid white;
+  overflow: hidden;
 }
 .promo--sections__list__item--education {
  background-image: url(images/education4.jpg);
@@ -516,6 +517,8 @@ margin-top: 0;
 .promo--powered__img{
 	margin: auto;
 	display: block;
+	width: 100%;
+	max-width: 300px;
 }
 .promo--collaboration__list{
 	list-style-type: none;
