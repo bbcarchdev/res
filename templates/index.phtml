@@ -5,38 +5,8 @@ page_header('Connecting the UK’s publicly held archives to inspire new ways of
 ?>
     <section class="smp"> 
 <div id="mediaPlayerWrapper">
-  <div id="mediaPlayer" style="height: 960px; width: 549px;"></div>
+  <iframe id="mediaPlayer" style="height: 960px; width: 549px;" src="https://play.bbcarchdev.net/p03dty2z/player"></iframe>
 </div>
-<script>
-require(["bump-3"], function($) {
-  console.log("loaded!");
-  var settings = {
-    responsive: true,
-    product: "res",
-    mediaProfile: "pc",
-    allowCasting: true,
-    preferHtmlOnDesktop: true,
-    preferHtmlOnMobile: true,
-    noTracking: true,
-    ui: {
-      colour: "#0404040"
-    },
-    playlistObject: {
-      title: "Test",
-      summary: "This is a test item",
-      holdingImageURL: "http://ichef.bbci.co.uk/images/ic/$recipe/p03f516x.png",
-      items: [
-        {
-          vpid: "p03dty31",
-          duration: 1170
-        }
-      ]
-    }
-  };
-  var mediaPlayer = $("#mediaPlayer").player(settings);
-  mediaPlayer.load();
-});
-</script>
     </section>
 		<section id="introduction" class="promo promo-intro">
       <div class="wrapper">   
