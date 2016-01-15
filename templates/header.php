@@ -27,12 +27,12 @@
         <script src="/res/js/respond.js"></script>
     <![endif]-->
 <script type="text/javascript" src="/res/js/modernizr.js"></script>
-<script type="text/javascript" src="http://static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js"></script>
+<script type="text/javascript" src="https://static.bbc.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js"></script>
 <script type="text/javascript">
 bbcRequireMap = {
-    "jquery-1.9":"http://static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1",
-    "swfobject-2":"http://static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
-        "bump-3":"http://emp.bbci.co.uk/emp/bump-3/bump-3"
+    "jquery-1.9":"https://static.bbc.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1",
+    "swfobject-2":"https://static.bbc.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
+        "bump-3":"https://emp.bbci.co.uk/emp/bump-3/bump-3"
 }
 require({ paths: bbcRequireMap,
     waitSeconds: 30 });
