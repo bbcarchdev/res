@@ -390,7 +390,7 @@ margin-top: 0;
 }*/
 
 .home .masthead:before {
-   background-image: url('images/banner1.png');
+   background-image: url('images/banner1.jpg');
    background-position: 50% 60%;
 	opacity: 1;
 }
