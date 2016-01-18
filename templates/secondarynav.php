@@ -5,7 +5,7 @@
       <li><a href="https://bbcarchdev.github.io/res/guides">Guides</a></li>
       <li><a href="//acropolis.org.uk">Developer API</a></li>
       <li><a href="https://bbcarchdev.github.io/res/tools">Tools</a></li>
-      <li><a href="https://bbcarchdev.github.io/res/code">Source Code</a></li>
+      <li><a href="https://bbcarchdev.github.io/res/code">Source code</a></li>
     </ul>
   </div>
 </nav>

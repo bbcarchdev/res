@@ -253,7 +253,15 @@ require(["bump-3"], function($) {
 	}
 	if(strlen($secondarynav))
 	{
-		$secondarynavtemplate = '<nav class="secondarynav"><div class="inner"><ul><li><a href="https://bbcarchdev.github.io/res/guides">Guides</a></li><li><a href="//acropolis.org.uk">Developer API</a></li><li><a href="https://bbcarchdev.github.io/res/tools">Tools</a></li><li><a href="https://bbcarchdev.github.io/res/code">Source Code</a></li></ul></div></nav>';
+		$secondarynavtemplate = '
+		<nav class="secondarynav">
+		<div class="inner">
+		<ul>
+		<li><a href="https://bbcarchdev.github.io/res/guides">Guides</a></li>
+		<li><a href="//acropolis.org.uk">Developer API</a></li>
+		<li><a href="https://bbcarchdev.github.io/res/tools">Tools</a></li>
+		<li><a href="https://bbcarchdev.github.io/res/code">Source code</a></li>
+		</ul></div></nav>';
 	}
 	else
 	{
