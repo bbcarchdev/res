@@ -491,6 +491,7 @@ margin-top: 0;
 		float: none;
 	}
 }
+
 /*.promo--collection__list__item--the-national-archives a {
 	background-image: url(/res/images/logos/the-national-archives.png);
 }
@@ -598,6 +599,27 @@ margin-top: 0;
 a:hover, a:active {
   color: #0055A2;
 }*/
+.figure--full{
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin: 0;
+  border-width: 0;
+}
+.figure--full figcaption{
+  display: block;
+  border-radius: 0;
+  background-color: transparent;
+  text-align: left;
+  max-width: 960px;
+  margin: auto;
+  padding: 10px 13pt;
+}
+@media screen and (min-width: 1025px) {
+  .figure--full figcaption{
+    padding: 10px 0;
+  } 
+}
 .img--full{
 	width: 100%;
 }
