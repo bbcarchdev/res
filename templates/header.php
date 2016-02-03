@@ -37,6 +37,7 @@
 						<li><a href="/res/education">Education</a></li>
 						<li><a href="/res/collections">Collections</a></li>
 						<li><a href="/res/products">Products</a></li>
+						<li><a href="/res/developers">Developers</a></li>
 						<li><a href="/res/faq">FAQ</a></li> 
 					</ul>
 				</div>

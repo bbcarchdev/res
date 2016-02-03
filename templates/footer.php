@@ -4,7 +4,7 @@
           <a href="/res/faq">FAQ</a> |
           <a href="mailto:resfeedback@bbc.co.uk">Contact us</a> |
           <a href="https://twitter.com/RES_project">Follow us on Twitter</a> |
-          <a href="https://twitter.com/share?text=RES+-+Research+and+education+space+-+&amp;url=http%3a%2f%2fwww.res.space" title="share on twitter - opens in new window" target="_blank">Share</a>
+          <a href="https://twitter.com/share?text=The+Research+and+Education+Space+(RES)+connecting+the+UK’s+publicly-held+archives+to+inspire+new+ways+of+learning+-&amp;url=http%3a%2f%2fres.space" title="share on twitter - opens in new window" target="_blank">Share</a>
 			  </p>
         <p>
           RES is a partnership between Jisc, the British Universities Film & Video Council (BUFVC) and the BBC.
@@ -22,7 +22,4 @@
 		</footer>
 	</body>
 </html>
-
-
-
 
