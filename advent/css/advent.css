@@ -1,0 +1,200 @@
+html { 
+	
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#advent {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#advent.clicky {
+  cursor: pointer;
+}
+
+#logo {
+  left: 10vmin;
+  position: absolute;
+  top: 14vmin;
+  width: 15vmin;
+  z-index: 4000;
+}
+
+#logo img {
+  max-width: 100%;
+}
+
+#popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  display: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#popup .today {
+  background: rgba(185, 185, 185, 0.9);
+  border-radius: 20px;
+  margin: 10vmin 6vmin 6vmin;
+	position: relative;
+}
+
+#popup .close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+  color: #fff;
+	font-size: 1.5em;
+}
+
+#popup .header, #popup .body {
+  display: block;
+}
+
+#popup .header {
+  padding-top: 5.5vmin;
+}
+
+#popup .body {
+	margin-bottom: 3vmin;
+}
+
+a {
+  color: #000;
+}
+
+h1.title, #popup .body {
+  margin-left: 28vmin;
+}
+
+@media only screen and (max-aspect-ratio: 3/2) {
+  #popup .body {
+  margin: 2vmin 3vmin;
+  }
+  
+  #popup .header, #popup .body {
+  padding-left: 0;
+  }
+}
+
+
+h2.date {
+  background: #fff none repeat scroll 0 0;
+	color: #000;
+  border: 4px dotted #a1a3a6;
+  border-radius: 50%;
+  height: 10vmin;
+  left: 48%;
+	margin: 0;
+  padding:  0.25em;
+  position: absolute;
+  text-align: center;
+  top: -6vmin;
+  width: 10vmin;
+	line-height: 3.2vmin;
+	font-weight: normal;
+}
+
+h2.date .day-num {
+  display: block;
+	padding: 1.8vmin 0 0.5vmin;
+	font-size: 4vmin;
+}
+
+h2.date .month {
+	font-size: 2.5vmin;
+}
+
+h1.title {
+  font-weight: normal;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+	h2.date {
+  left: 42%;
+	}
+	
+	h1.title {
+	margin: 14vmin 3vmin 2vmin;;
+  }
+}
+
+#popup .day-image, #popup .synopsis {
+  float: left;
+}
+
+#popup .day-image {
+  margin-bottom: 2vmin;
+  width: 45%;
+  text-align: center;
+  margin-right: 4vmin;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#popup .synopsis {
+  margin: 0;
+  width: 45%;
+  padding: 0;
+}
+
+@media only screen and (max-aspect-ratio: 3/2) {
+  #popup .day-image, #popup .synopsis {
+    width: 100%;
+  }
+}
+
+#popup .day-image img {
+  max-width: 100%;
+  max-height: 50vh;
+}
+
+#popup p.description {
+  margin-top: 0;
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+		
+	h2.date .day-num {
+  padding: 0.45em 0 0;
+	}
+		
+	#popup .close {
+	right: 20px;
+  top: 10px;
+	}
+	
+	h1.title {
+    margin: 14vmin 3vmin 0;
+	}
+}
+
+a.button {
+  display: block;
+  text-decoration: none;
+}
+
+a.button .fa {
+  color: #000;
+}
+
+a.button:hover .fa {
+  opacity: 0.5;
+}
