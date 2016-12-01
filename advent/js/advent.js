@@ -356,7 +356,7 @@ $(function() {
 
       ps.renderer = Renderer(cvs, function(hit) {});
 
-      $.get("/data.json").then(function(data) {
+      $.get("data.json").then(function(data) {
         console.log("Data loaded", data);
         for (var i = 0; i < data.length; i++) {
           var info = data[i];
