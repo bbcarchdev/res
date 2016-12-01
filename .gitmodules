@@ -1,0 +1,3 @@
+[submodule "advent"]
+	path = advent
+	url = git@github.com:AndyA/advent.git
