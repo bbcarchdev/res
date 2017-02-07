@@ -1,6 +1,6 @@
 ## Author: Mo McRoberts <mo.mcroberts@bbc.co.uk>
 ##
-## Copyright (c) 2014 BBC
+## Copyright (c) 2014-2017 BBC
 ##
 ## Licensed under the terms of the Open Government Licence, version 2.0.
 ## You may obtain a copy of the license at:
@@ -9,39 +9,12 @@
 
 SUBDIRS = templates
 
+# Remember to update buildrules.make if this list changes
 reshtdoc_DATA = index.html code.html guides.html tools.html education.html collections.html products.html faq.html developers.html
+dist_reshtdoc_DATA = local.css *.png
 
 CLEANFILES = $(reshtdoc_DATA)
 
-dist_reshtdoc_DATA = local.css *.png
+HTML = $(reshtdoc_DATA)
 
-TEMPLATES = templates/header.php templates/footer.php
-
-GENERATE = $(PHP) -f $(srcdir)/templates/generate.php
-
-index.html: $(srcdir)/templates/index.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-code.html: $(srcdir)/templates/code.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-guides.html: $(srcdir)/templates/guides.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-tools.html: $(srcdir)/templates/tools.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-education.html: $(srcdir)/templates/education.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-collections.html: $(srcdir)/templates/collections.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-products.html: $(srcdir)/templates/products.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-faq.html: $(srcdir)/templates/faq.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
-
-developers.html: $(srcdir)/templates/developers.phtml $(srcdir)/templates/generate.php $(TEMPLATES)
-	$(GENERATE) $< > $@
+include common.make
