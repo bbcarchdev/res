@@ -6,12 +6,7 @@
           <a href="https://twitter.com/RES_project">Follow us on Twitter</a> |
           <a href="https://twitter.com/share?text=The+Research+and+Education+Space+(RES)+connecting+the+UK’s+publicly-held+archives+to+inspire+new+ways+of+learning+-&amp;url=http%3a%2f%2fres.space" title="share on twitter - opens in new window" target="_blank">Share</a>
 			  </p>
-        <p>
-          RES is a partnership between Jisc, Learning on Screen and the BBC.
-        </p>
         <p class="logos">
-          <a href="http://www.jisc.ac.uk/" title="Jisc"><img src="/res/images/logos/jisc.png" alt="Jisc"></a>
-          <a id="bufvc-logo" href="http://www.bufvc.ac.uk/" title="BUFVC"><img src="/res/images/logos/bufvc.png" alt="BUFVC"></a>
           <a href="http://www.bbc.co.uk/" title="BBC"><img src="/res/images/logos/bbc.png" alt="BBC"></a>
         </p>
         <p>Copyright © 2016 BBC</p>
