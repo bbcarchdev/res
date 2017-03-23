@@ -9,6 +9,8 @@
 
 SUBDIRS = templates
 
+GENERATE = $(PHP) -f $(srcdir)/templates/generate.php
+
 # Remember to update buildrules.make if this list changes
 reshtdoc_DATA = index.html code.html guides.html tools.html education.html collections.html products.html faq.html developers.html
 dist_reshtdoc_DATA = local.css *.png
